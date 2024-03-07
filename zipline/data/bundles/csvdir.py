@@ -186,8 +186,8 @@ def _pricing_iter(csvdir, symbols, metadata, divs_splits, show_progress):
                            infer_datetime_format=True,
                            index_col=0).sort_index()
 
-            start_date = dfr.index[0]
-            end_date = dfr.index[-1]
+            start_date = dfr['Date']
+            end_date = dfr['Date']
 
             print(dfr)
 
