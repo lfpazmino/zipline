@@ -168,7 +168,7 @@ they were compiled.
 Documentation
 ~~~~~~~~~~~~~
 
-To update `zipline.io <https://www.zipline.io>`__, checkout the
+To update `zipline.io <https://zipline-trader.readthedocs.io/en/latest/index.html>`__, checkout the
 latest master and run:
 
 .. code-block:: python
@@ -196,7 +196,7 @@ Once we are happy, push the updated docs to the GitHub ``gh-pages`` branch.
    $ git commit -m "DOC: update zipline.io"
    $ git push origin gh-pages
 
-`zipline.io <https://www.zipline.io>`__ will update in a few moments.
+`zipline.io <https://zipline-trader.readthedocs.io/en/latest/index.html>`__ will update in a few moments.
 
 Uploading conda packages
 ~~~~~~~~~~~~~~~~~~~~~~~~

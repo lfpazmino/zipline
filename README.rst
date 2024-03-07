@@ -1,5 +1,5 @@
 .. image:: https://media.quantopian.com/logos/open_source/zipline-logo-03_.png
-    :target: https://www.zipline.io
+    :target: https://zipline-trader.readthedocs.io/en/latest/index.html
     :width: 212px
     :align: center
     :alt: Zipline
@@ -21,8 +21,8 @@ strategies. Quantopian also offers a `fully managed service for professionals <h
 that includes Zipline, Alphalens, Pyfolio, FactSet data, and more.
 
 - `Join our Community! <https://groups.google.com/forum/#!forum/zipline>`_
-- `Documentation <https://www.zipline.io>`_
-- Want to Contribute? See our `Development Guidelines <https://www.zipline.io/development-guidelines>`_
+- `Documentation <https://zipline-trader.readthedocs.io/en/latest/index.html>`_
+- Want to Contribute? See our `Development Guidelines <https://zipline-trader.readthedocs.io/en/latest/index.html/development-guidelines>`_
 
 Features
 ========
@@ -55,7 +55,7 @@ activate a virtualenv, then run the ``etc/dev-install`` script.
 Quickstart
 ==========
 
-See our `getting started tutorial <https://www.zipline.io/beginner-tutorial>`_.
+See our `getting started tutorial <https://zipline-trader.readthedocs.io/en/latest/index.html/beginner-tutorial>`_.
 
 The following code implements a simple dual moving average algorithm.
 
@@ -115,7 +115,7 @@ If you find a bug, feel free to `open an issue <https://github.com/quantopian/zi
 Contributing
 ============
 
-All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome. Details on how to set up a development environment can be found in our `development guidelines <https://www.zipline.io/development-guidelines>`_.
+All contributions, bug reports, bug fixes, documentation improvements, enhancements, and ideas are welcome. Details on how to set up a development environment can be found in our `development guidelines <https://zipline-trader.readthedocs.io/en/latest/index.html/development-guidelines>`_.
 
 If you are looking to start working with the Zipline codebase, navigate to the GitHub `issues` tab and start looking through interesting issues. Sometimes there are issues labeled as `Beginner Friendly <https://github.com/quantopian/zipline/issues?q=is%3Aissue+is%3Aopen+label%3A%22Beginner+Friendly%22>`_ or `Help Wanted <https://github.com/quantopian/zipline/issues?q=is%3Aissue+is%3Aopen+label%3A%22Help+Wanted%22>`_.
 
@@ -146,4 +146,4 @@ Feel free to ask questions on the `mailing list <https://groups.google.com/forum
 .. |Coverage Status| image:: https://coveralls.io/repos/quantopian/zipline/badge.svg
    :target: https://coveralls.io/r/quantopian/zipline
 
-.. _`Zipline Install Documentation` : https://www.zipline.io/install
+.. _`Zipline Install Documentation` : https://zipline-trader.readthedocs.io/en/latest/index.html/install

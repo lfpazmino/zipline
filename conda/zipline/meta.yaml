@@ -34,7 +34,7 @@ test:
     - zipline
 
 about:
-  home: https://www.zipline.io
+  home: https://zipline-trader.readthedocs.io/en/latest/index.html
   license: Apache Software License
 
 # See
