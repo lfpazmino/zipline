@@ -189,6 +189,9 @@ def _pricing_iter(csvdir, symbols, metadata, divs_splits, show_progress):
             start_date = dfr.index[0]
             end_date = dfr.index[-1]
 
+            print('**************** END DATE: ', end_date)
+            print('******************* Time Delta: ', Timedelta(days=1))
+
             # The auto_close date is the day after the last trade.
             ac_date = end_date + Timedelta(days=1)
             metadata.iloc[sid] = start_date, end_date, ac_date, symbol
