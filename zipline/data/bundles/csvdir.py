@@ -189,7 +189,7 @@ def _pricing_iter(csvdir, symbols, metadata, divs_splits, show_progress):
             start_date = dfr.index[0]
             end_date = dfr.index[-1]
 
-            print('dataframe', dfr)
+            print(dfr)
 
             print('***************** START DATE: ', start_date)
             print('**************** END DATE: ', end_date)
