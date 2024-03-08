@@ -198,10 +198,9 @@ def _pricing_iter(csvdir, symbols, metadata, divs_splits, show_progress):
             print('****** ac_date', end_date + Timedelta(days=1))
             
             # The auto_close date is the day after the last trade.
-            if type(end_date) is datetime.datetime:
-                ac_date = end_date + Timedelta(days=1)
-                metadata.iloc[sid] = start_date, end_date, ac_date, symbol
-                print('******* metadata', metadata)
+            ac_date = end_date + Timedelta(days=1)
+            metadata.iloc[sid] = start_date, end_date, ac_date, symbol
+            print('******* metadata', metadata)
             
             if 'split' in dfr.columns:
                 tmp = 1. / dfr[dfr['split'] != 1.0]['split']
