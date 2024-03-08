@@ -191,8 +191,8 @@ def _pricing_iter(csvdir, symbols, metadata, divs_splits, show_progress):
             end_date = dfr['date']
 
             print('****** columns', dfr.columns)
-            print('****** first', dfr[0])
-            print('****** last', dfr[-1])
+            print('****** first', dfr.index[0])
+            print('****** last', dfr.index[-1])
             
             # The auto_close date is the day after the last trade.
             if type(end_date) is datetime.datetime:
