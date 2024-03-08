@@ -3,6 +3,7 @@ Module for building a complete dataset from local directory with csv files.
 """
 import os
 import sys
+import datetime
 
 from logbook import Logger, StreamHandler
 from numpy import empty
@@ -190,11 +191,15 @@ def _pricing_iter(csvdir, symbols, metadata, divs_splits, show_progress):
             end_date = dfr['date']
 
             print('****** columns', dfr.columns)
-
+            print('****** first', dfr[0])
+            print('****** last', dfr[-1])
+            
             # The auto_close date is the day after the last trade.
-            ac_date = end_date + Timedelta(days=1)
-            metadata.iloc[sid] = start_date, end_date, ac_date, symbol
-
+            if type(end_date) is datetime.datetime:
+                ac_date = end_date + Timedelta(days=1)
+                metadata.iloc[sid] = start_date, end_date, ac_date, symbol
+                print('******* metadata', metadata)
+            
             if 'split' in dfr.columns:
                 tmp = 1. / dfr[dfr['split'] != 1.0]['split']
                 split = DataFrame(data=tmp.index.tolist(),
