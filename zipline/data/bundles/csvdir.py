@@ -183,7 +183,7 @@ def _pricing_iter(csvdir, symbols, metadata, divs_splits, show_progress):
                 raise ValueError("%s.csv file is not in %s" % (symbol, csvdir))
 
             dfr = read_csv(os.path.join(csvdir, fname),
-                           parse_dates=[0],
+                           parse_dates=['date'],
                            infer_datetime_format=True,
                            index_col='date').sort_index()
 
